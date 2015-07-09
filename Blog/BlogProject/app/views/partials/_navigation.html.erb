@@ -1,0 +1,39 @@
+<header>
+
+			<img src="http://www.carlascovers.com/covers-images/download/Food_herbs%20and%20spices_336506.jpg" alt="Mountain View" style="width:100%">
+	<nav class="be-red white large-padding nav--main">
+		<ul class="no-list row center-xs middle-xs">
+			<li class="col-md">
+				<h1 class= "no-margin" id="logo"> UMAMI </h1>
+			</li>
+			<li class="col-md">
+				<%= link_to "Inicio", root_path %>
+			</li>
+			<li class="col-md">
+				Porque UMAMI?
+			</li>
+			<li class="col-md">
+				Tipos de comida
+			</li>
+			<li class="col-md">
+				<%= link_to "Reseñas", "/articles" %>
+			</li>
+			<li class="col-md">
+				Recomendaciones
+			</li>
+			<% if user_signed_in? %>
+			<l1 class="col-md">
+				<%= link_to "Cerrar Sesion", destroy_user_session_path, method: :delete %>
+			</l1>
+			<% else %>
+				<l1 class="col-md">
+				<%= link_to "Iniciar Sesion", new_user_session_path %>
+				</l1>
+				<!--l1 class="col-md">
+				<%= link_to "Crear Cuenta", new_user_registration_path %>
+				-->
+			</l1>
+			<%end%>
+		</ul>
+	</nav>
+</header>

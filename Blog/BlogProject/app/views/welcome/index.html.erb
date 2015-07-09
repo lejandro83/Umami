@@ -1,0 +1,20 @@
+<div class="row center-xs">
+  <div class="col-xs8 col-md-6">
+    
+    <h1>Bienvenido a UMAMI</h1>
+    <% if user_signed_in? %>
+	<h1> <%= current_user.email %> </h1>
+	<%end%>
+
+<!--
+<% [1,2,3,4].each do |number| %>
+<p> NUmero: <%= number %>
+<%end%>
+
+<% mundo = :Alejandro %>
+<%= "Hola #{mundo}" %>
+-->
+
+	
+	</div>
+</div>
